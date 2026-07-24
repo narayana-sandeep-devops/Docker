@@ -1,7 +1,5 @@
 FROM ubuntu:latest
 
-RUN apt update -y
+COPY cookies.png /tmp
 
-RUN apt install iputils-ping -y
-
-CMD ["ping","google.com"]
+COPY cookies.tar.gz /root

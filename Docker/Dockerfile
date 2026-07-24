@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
-COPY cookies.png /tmp
+WORKDIR /test1
 
-COPY cookies.tar /root
+COPY cookies.png .
+
+CMD ["sleep","36000"]

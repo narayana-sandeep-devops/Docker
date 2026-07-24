@@ -1,7 +1,7 @@
-FROM Ubuntu:Latest
+FROM ubuntu:Latest
 
-RUN dnf update -y
+RUN apt update -y
 
-RUN dnf install netutils-ping -y
+RUN apt install iputils-ping -y
 
 CMD ["ping","google.com"]
